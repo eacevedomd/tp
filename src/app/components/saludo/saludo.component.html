@@ -1,1 +1,14 @@
-<h1 *ngIf="showGreetings">¡Hola, {{name}}!</h1>
+<h1 
+    *ngIf="showGreetings"
+    [ngClass]="color" 
+>¡Hola, {{name}}!</h1>
+
+    <button 
+        (click)="changeColor('red')">
+        Rojo
+    </button>
+
+    <button 
+        (click)="changeColor('green')">
+        Verde
+    </button>

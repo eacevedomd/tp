@@ -11,4 +11,10 @@ export class SaludoComponent {
 
   public name : string = "Emiliano"
 
+  public color : string = "red";
+
+  changeColor(color : string):void{
+    this.color = color;
+  }
+
 }
