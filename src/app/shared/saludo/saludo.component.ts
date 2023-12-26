@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'saludo',
+  selector: 'shared-saludo',
   templateUrl: './saludo.component.html',
   styleUrl: './saludo.component.css'
 })
 export class SaludoComponent {
   @Input()
-  public showGreetings! : boolean;
+  public showGreetings : boolean = true;
 
   public name : string = "Emiliano"
 
