@@ -1,7 +1,7 @@
 <h1 
     *ngIf="showGreetings"
     [ngClass]="color" 
->¡Hola, {{name}}!</h1>
+>¡Hola, {{name | upperCaseCustom }}!</h1>
 
     <button 
         (click)="changeColor('red')">
