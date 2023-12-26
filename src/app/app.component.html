@@ -1,2 +1,5 @@
-<saludo [showGreetings]="true"/>
+<saludo [showGreetings]="isShowingGreetings"/>
 
+<button (click)="greetingsHandle()">
+ {{ isShowingGreetings ? "ocultar" : "mostrar"}} saludo
+</button>
